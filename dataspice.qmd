@@ -1,10 +1,10 @@
 ---
-title: "dataspice-alpha gal"
+title: "dataspice"
 author: "Mindy Marshall"
-date: "`r Sys.Date()`"
+date: "3/3/2025"
 format: 
-  html: 
-  code-fold: true
+  html:
+    code-fold: true
 ---
 
 # Install necessary packages (only needed once)
@@ -47,13 +47,9 @@ write_spice()
 
 install.packages(c("jsonlite", "listviewer", "here", "magrittr", "pkgdown"))
 
-library(jsonlite) 
-library(listviewer) 
-library(here) 
-library(magrittr) 
-library(pkgdown)
+library(jsonlite) library(listviewer) library(here) library(magrittr) library(pkgdown)
 
-jsonlite::read_json(here::here("data", "metadata", "dataspice.json")) %>% listviewer::jsonedit()
+jsonlite::read_json(here::here("data", "metadata", "dataspice.json")) %\>% listviewer::jsonedit()
 
 dataspice::build_site(path = "data/metadata/dataspice.json", template_path = system.file("template.html5", package = "dataspice"), out_path = "docs/index.html" )
 
