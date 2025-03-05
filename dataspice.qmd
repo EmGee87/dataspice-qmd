@@ -27,25 +27,25 @@ create_spice(dir = "data")
 
 edit_creators()
 
-![](images/screenshot shiny creators.csv table.jpg)
+![](screenshot shiny creators.csv table.png)
 
 # The access.csv contains details about where the data can be accessed.
 
 edit_access()
 
-![](images/screenshot shiny access.csv table.jpg)
+![](screenshot shiny access.csv table.png)
 
-# Provide high-level information about your dataset, including title, description, license, and spatial/temporal coverage.
+Provide high-level information about your dataset, including title, description, license, and spatial/temporal coverage.
 
 edit_biblio()
 
-![](images/screenshot shiny biblio.csv table.jpg)
+![](screenshot shiny biblio.csv table.png)
 
 # Document each variable in your dataset, including its name, description, and data type.
 
 edit_attributes()
 
-![](images/screenshot shiny attributes.csv table.jpg)
+![](screenshot shiny attributes.csv table.png)
 
 # Now that all our metadata files are complete, we can **compile it all into a structured `dataspice.json` file** in our `data/metadata/` folder.
 
